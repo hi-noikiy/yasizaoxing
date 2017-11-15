@@ -1,0 +1,12 @@
+<!--show.wxml-->
+<import src="../wxParse/wxParse.wxml" />
+<view class="shop_container">
+  <view class="title">
+    <text class="title">{{shop_name}}</text>
+  </view>
+  <view class="content">
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article_content.nodes}}" />
+    </view>
+  </view>
+</view>

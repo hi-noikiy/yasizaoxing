@@ -1,0 +1,15 @@
+<!--map.wxml-->
+<view class="map-container" >
+  <view class="shopinfo fv" wx:if="{{showshop}}" bindtap="shopitem" data-id="{{shop.id}}" >
+    <view class="shop-img"><image src="../imgs/location.png" mode="widthFix"></image></view>
+    <view class="text">
+      <view class="title">{{shop.name}}</view>
+      <view class="sub-title">地点：{{shop.address}}</view>
+      <view class="sub-title">电话：{{shop.phone}}</view>
+    </view>
+    <image class="to_right" src="../imgs/to_right.png" mode="widthFix" ></image>
+  </view>
+  <map id="map" style="top: {{maptop?'93px':0}}" latitude="{{latitude}}" longitude="{{longitude}}" catchtap="close" controls="{{controls}}" bindcontroltap="controltap" scale="14" markers="{{marker}}" bindcallouttap="callouttap" bindmarkertap="markertap" show-location >
+    <cover-view class="mask" bindtap="close" wx:if="{{showshop}}"></cover-view>
+  </map>
+</view>

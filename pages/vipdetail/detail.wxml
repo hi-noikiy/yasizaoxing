@@ -1,0 +1,35 @@
+<!--detail.wxml-->
+<view class="vip_container">
+  <!-- 头部图片 S-->
+  <image class="vip_image" mode="widthFix" src="../imgs/card_bg.png">
+    <view class="top">未来美业</view>
+    <view class="center">
+      <view class="left fl">
+        <view class="time">购卡时间    {{cards[0].buytime}}</view>
+        <view class="time">剩余天数    {{cards[0].sytime}}</view>
+      </view>
+      <view class="right fr">
+        <text>VIP</text>会员卡</view>
+    </view>
+    <view class="bottom">NO: {{cards[0].cardnum}}</view>
+  </image>
+  <!-- 头部图片 E-->
+  <view class="detail">
+    <view class="title">会员卡使用说明</view>
+    <view class="content">
+    <text>
+    {{cards[0].desc}}
+    </text>
+    </view>
+    <view class="links">
+      <navigator url="../history/history" class="link first">
+        <image mode="widthFix" src="../imgs/history.png"></image>
+        <text>历史记录</text>
+      </navigator>
+      <navigator url="{{islogin && islogin==true?'../person/person':'../login/login'}}" class="link">
+        <image mode="widthFix" src="../imgs/person.png"></image>
+        <text>个人信息</text>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+/* success.wxss */
+.img {
+  width: 40%;
+}
+.text {
+  padding-top: 20px;
+  color: #333333;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center
+}
+.btn {
+  margin-top: 10px;
+  line-height: 40px;
+  background-color: #e82b75;
+  padding:0 10px;
+  border-radius:5px;
+  color: #fff
+}

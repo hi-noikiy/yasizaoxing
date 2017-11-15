@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/order/order",
+    "pages/vipdetail/detail",
+    "pages/show/show",
+    "pages/fail/fail",
+    "pages/success/success",
+    "pages/person/person",
+    "pages/card/card",
+    "pages/history/history",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#382e2f",
+    "navigationBarTitleText": "未来美业",
+    "navigationBarTextStyle": "#fff"
+  }
+}

@@ -1,0 +1,11 @@
+<!--fail.wxml-->
+<view class="container">
+  <image class="img" src="../imgs/fail.png" mode="widthFix"></image>
+  <view class="text">
+    <view>扫码失败</view>
+    <view class="btn-wrap">
+      <navigator class="btn" url="/pages/card/card">前往购买</navigator>
+      <navigator class="btn" url="/pages/map/map">返回首页</navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="login-container">
+  <view class="input"><input type="number" bindinput="mobileInput" maxlength="11" placeholder="请输入手机号" /></view>
+  <view class="input code"><input type="text" bindinput="codeInput" maxlength="10" placeholder="请输入手机验证码" /><button id="get-code"  bindtap="getCode" disabled="{{isDisabled}}" class="btn">{{buttonText}}</button></view>
+  <button class="login-btn btn" bindtap="login" >登录</button>
+</view>

@@ -1,0 +1,17 @@
+/* show.wxss */
+@import "../wxParse/wxParse.wxss";
+.shop_container {
+  padding: 15px;
+}
+.title {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #565656;
+  font-weight: 700;
+}
+.content {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #565656;
+}

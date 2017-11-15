@@ -1,0 +1,8 @@
+<!--success.wxml-->
+<view class="container">
+  <image class="img" src="../imgs/success.png" mode="widthFix"></image>
+  <view class="text">
+    <view>扫码成功,祝您消费愉快</view>
+    <navigator url="../map/map" class="btn">返回首页</navigator>
+  </view>
+</view>

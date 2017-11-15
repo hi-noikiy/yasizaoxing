@@ -1,0 +1,35 @@
+/* fail.wxss */
+.img {
+  width: 40%;
+}
+.text {
+  padding-top: 20px;
+  color: #333333;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center
+}
+.btn {
+  margin-top: 10px;
+  line-height: 40px;
+  background-color: #e82b75;
+  padding:0 10px;
+  border-radius:5px;
+  color: #fff
+}
+.btn-wrap {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.btn-wrap {
+  width: 100vw;
+  padding: 0 15%;
+  box-sizing: border-box
+}
+.btn-wrap .btn:last-child {
+  background: none;
+  color: #e82b75;
+  border: 1px solid
+}

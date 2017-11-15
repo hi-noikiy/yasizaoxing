@@ -1,0 +1,40 @@
+<view class="tab">
+    <view class="item {{selected==0?'active':''}}" data-id="0" bindtap="historyTap"><text>购卡记录</text></view>
+    <view class="item {{selected==1?'active':''}}" data-id="1" bindtap="historyTap"><text>使用记录</text></view>
+</view>
+<scroll-view scroll-y="true" lower-threshold="20" bindscrolltolower="scroll">
+  <view class="item" style="display: {{selected==0?'block':'none'}}">
+    <!-- 购卡记录 -->
+    <view class="title">最近购卡记录</view>
+    <view class="list">
+      <view class="li" wx:if="{{hisList.length>0}}">
+        <view class="i top"><text class="fl">{{hisList[0].goodsname}}</text><text class="fr price">{{hisList[0].price}}元</text></view>
+        <view class="i bottom"><text class="fl">{{hisList[0].createtime}}</text><text class="fr">{{hisList[0].status==1?'付款成功':'未付款'}}</text></view>
+      </view>
+    </view>
+    <view class="title">历史记录</view>
+    <view class="list">
+      <view class="li" wx:for="{{hisList}}" wx:key="{{index}}">
+        <view class="i top"><text class="fl">{{item.goodsname}}</text><text class="fr price">{{item.price}}元</text></view>
+        <view class="i bottom"><text class="fl">{{item.createtime}}</text><text class="fr">{{item.status==1?'付款成功':'未付款'}}</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="item" style="display: {{selected==1?'block':'none'}}">
+    <!-- 使用记录 -->
+    <view class="title">最近使用记录</view>
+    <view class="list">
+      <view class="li" wx:if="{{payHisList.length>0}}">
+        <view class="i top"><text class="fl">{{payHisList[0].storename}}</text><text class="status">使用成功</text></view>
+        <view class="i bottom"><text class="fl">{{payHisList[0].addtime}}</text></view>
+      </view>
+    </view>
+    <view class="title">历史记录</view>
+    <view class="list">
+      <view class="li" wx:key="{{index}}" wx:for="{{payHisList}}">
+        <view class="i top"><text class="fl">{{item.storename}}</text><text class="status">使用成功</text></view>
+        <view class="i bottom"><text class="fl">{{item.addtime}}</text></view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

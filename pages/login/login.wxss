@@ -1,0 +1,35 @@
+/* login.wxss */
+.login-container {
+  padding: 20% 10px 0 10px;
+}
+.input {
+  position: relative;
+  padding: 12px;
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.input button {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 40%;
+  line-height: 35px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #382e2f;
+  border-radius: 3px;
+}
+button.btn {
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #382e2f;
+  border-radius: 3px;
+}
+button.login-btn {
+  margin-top: 70px;
+}
+.code input {
+  padding-right: 40%;
+}

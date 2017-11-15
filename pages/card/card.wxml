@@ -1,0 +1,27 @@
+<!--card.wxml-->
+<view class="card-container">
+  <view class="top content-pad">
+    <image class="fl" style="width: 30%" mode="widthFix" src="../imgs/card_img.png"></image>
+    <view class="text">
+      <text class="title">未来美业会员卡</text>
+      <text class="sub_title">到店可享受免费洗发服务</text>
+    </view>
+  </view>
+  <view class="show-title content-pad">选择会员卡类型</view>
+  <view class="center content-pad">
+    <view class="{{index==dindex?'active':''}} item fv" wx:key="{{index}}" wx:for="{{cardlist}}">
+      <view class="mask" bindtap="choose" data-index="{{index}}" data-id="{{item.id}}" ></view>
+      <view class="left">
+        <view class="title f-b">{{item.cardname}}</view>
+        <view class="sub-title">含{{item.days}}天会员</view>
+      </view>
+      <view class="right">
+        <text class="sub">¥:{{item.costprice}}</text><text class="main">¥:{{item.marketprice}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="left fl">总价: <text>￥{{cardlist[dindex].marketprice}}</text></view>
+    <view class="right fr" bindtap="wxpay">微信支付</view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--person.wxml-->
+<view class="person-container">
+  <view class="list fv first">
+    <text class="fl text">头    像</text><view class="fr" ><image class="head" src="{{avatarUrl}}" mode="widthFix"></image></view>
+  </view>
+  <view class="list fv">
+    <text class="fl text">昵    称</text><view class="fr" >{{nickName}}</view>
+  </view>
+  <view class="list fv last">
+    <text class="fl text">手机号码</text><view class="fr" >{{mobile}}</view>
+  </view>
+  <view class="exit" bindtap="exit">退出登录</view>
+</view>

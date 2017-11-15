@@ -1,0 +1,81 @@
+/* detail.wxss */
+page {
+  background-color: #fff;
+}
+.vip_container {
+  padding: 15px;
+  box-sizing: border-box
+}
+.vip_image {
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+.vip_image .top {
+  position: absolute;
+  top: 25px;
+  left: 20%;
+}
+.vip_image .center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50px;
+  padding: 0 5%;
+  margin-top: -25px;
+  line-height: 30px;
+  font-size: 14px;
+  box-sizing: border-box
+}
+.vip_image .center .right {
+  line-height: 60px;
+}
+.vip_image .center .right text {
+  font-size: 30px;
+  font-weight: 700
+}
+.vip_image .bottom {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+.detail {
+  padding-top: 18px;
+}
+.detail .title {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #333;
+}
+.detail .content {
+  color: #666666;
+  font-size: 13px;
+}
+.detail image {
+  width: 16px;
+}
+.detail text {
+  display: block;
+  margin-top: 7px;
+}
+.detail .links {
+  display: flex;
+  display: -webkit-flex;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 13px;
+}
+.detail .links .link {
+  position: relative;
+  width: 33.33%;
+}
+.detail .links .first::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 30px;
+  margin-top: -15px;
+  background-color: #c3c3c3;
+}

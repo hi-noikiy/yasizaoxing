@@ -1,0 +1,11 @@
+<!--order.wxml-->
+<scroll-view class="scrollview" scroll-y="true" lower-threshold="20" bindscrolltolower="scroll">
+  <view class="title">最新订单记录</view>
+  <view class="list">
+    <view class="li" wx:for="{{payHisList}}" wx:key="{{index}}">
+      <image class="head" src="{{item.avatar}}" mode="widthFix"></image>
+      <view class="i top"><text class="fl">{{item.nickname}}</text><text class="fr price">{{item.cardname}}</text></view>
+      <view class="i bottom"><text class="fl">{{item.addtime}}</text><text class="fr">付款成功</text></view>
+    </view>
+  </view>
+</scroll-view>
